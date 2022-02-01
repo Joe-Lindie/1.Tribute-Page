@@ -1,0 +1,95 @@
+/* Basic Styling*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #d3d3d3;
+  font-size: 13px;
+}
+
+/* Mobile Styling*/
+
+.header-bck {
+  background-color: rgb(117, 114, 114);
+  width: 100%;
+}
+
+#container,
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* width 300px: - 300px/16 -- 18.75rem*/
+.img-container img {
+  width: 18.75rem;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.img-container img:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+p {
+  margin: 10px 15px 10px 15px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.header-bck h2 {
+  font-style: italic;
+}
+
+p,
+#list {
+  line-height: 1.4rem;
+  text-align: justify;
+}
+
+.Text {
+  line-height: 1.4rem;
+  font-weight: 900;
+}
+
+.Text:hover {
+  cursor: pointer;
+}
+
+#readmore span {
+  font-weight: 900;
+}
+
+/* Desktop layout*/
+@media (min-width: 750px) {
+  p {
+    margin: 10px 10rem 10px 10rem;
+  }
+}
